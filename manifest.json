@@ -1,18 +1,17 @@
 {
-  "name": "Tagado",
+  "name": "Tagado - Notifier",
   "author": {
-    "name": "Eugen",
+    "name": "Tagado Integrations",
     "email": "eugen@tagado.com",
     "url": "https://www.tagado.com"
   },
+  "version": "1.0",
+  "frameworkVersion": "2.0",
   "defaultLocale": "en",
   "private": false,
   "location": {
     "support": {
-      "ticket_sidebar": "assets/ticket_sidebar.html",
-      "user_sidebar": "assets/user_sidebar.html"
+      "nav_bar": "assets/index.html"
     }
-  },
-  "version": "1.0",
-  "frameworkVersion": "2.0"
+  }
 }
