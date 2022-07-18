@@ -1,6 +1,6 @@
-# Notely
+# Tagado
 
-Notely is a sample Zendesk App that allows you to record note events using the Events API.
+Tagado is a sample Zendesk App that allows you to record note events using the Events API.
 <img src="./images/screenshot.png" width="400">
 
 ## Table of Contents
@@ -29,7 +29,7 @@ To run the app on your Zendesk subdomain
 ## Local Development
 Clone the repo and `cd` into the directory
 ```
-git clone git@github.com:zendesk/notely_app.git && cd notely_app
+git clone git@github.com:zendesk/Tagado_app.git && cd Tagado_app
 ```
 
 Run the local dev server
