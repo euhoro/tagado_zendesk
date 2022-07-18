@@ -16,12 +16,12 @@ function fetchConfig(integrationKey) {
 
   client.request(request).then(
     function(response) {
-      console.log("Config fetched successfully: ", response.configs[0].config)
+      cons.lg("Config fetched successfully: ", response.configs[0].config)
       scopeExists = true;
       updateComponents(response.configs[0].config);
     },
     function(response) {
-      console.log("Config fetching failed: ", response)
+      cons.lg("Config fetching failed: ", response)
       if (response.status == 404) {
         scopeExists = false;
       }
@@ -63,19 +63,19 @@ function submitConfig(integrationKey) {
 
   client.request(request).then(
     function(response) {
-      //eugen console.log("Config submitted successfully: ", response);
+      //eugen cons.lg("Config submitted successfully: ", response);
       client.invoke('notify', "Submitted successfully");
       scopeExists = true;
     },
     function(response) {
-      //eugen console.log("Config submission failed: ", response);
+      //eugen cons.lg("Config submission failed: ", response);
     }
   );
 }
 
 // updateComponents updates the UI components with the newly fetched config data
 function updateComponents(config) {
-  //eugen console.log("Updating components with config: ", config);
+  //eugen cons.lg("Updating components with config: ", config);
   $("#select-priority").val(config.priority);
   $("#txt-channel").val(config.channel);
 }

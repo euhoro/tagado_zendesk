@@ -11,10 +11,10 @@ function upsertBundle(integrationKey) {
 
   return client.request(request).then(
     function(response) {
-      console.log("Bundle upserted successfully")
+      cons.lg("Bundle upserted successfully")
     },
     function(response) {
-      console.log("Failed to upsert bundle: ", response)
+      cons.lg("Failed to upsert bundle: ", response)
     }
   );
 }

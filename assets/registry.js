@@ -13,10 +13,10 @@ function installFlow(integrationKey) {
 
   return client.request(request).then(
     function(response) {
-      console.log("Flow enabled successfully")
+      cons.lg("Flow enabled successfully")
     },
     function(response) {
-      console.log("Failed to enable flow: ", response)
+      cons.lg("Failed to enable flow: ", response)
     }
   );
 }

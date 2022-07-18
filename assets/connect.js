@@ -24,18 +24,18 @@ function startOAuth(integrationKey, subdomain) {
 
   client.request(request).then(
     function(response) {
-      //eugen console.log("OAuth started successfully");
+      //eugen cons.lg("OAuth started successfully");
       authorize(response.redirect_url)
     },
     function(response) {
-      //eugen console.log("Failed to start OAuth: ", response);
+      //eugen cons.lg("Failed to start OAuth: ", response);
     }
   );
 };
 
 function authorize(redirectURL) {
   let authWindow = window.open(redirectURL, '_blank')
-  //eugen setTimeout(watchToken, 1500);
+  //eugen setT(watchToken, 1500);
   // poll token from the newly opened window
   function watchToken() {
     try {
@@ -45,11 +45,11 @@ function authorize(redirectURL) {
       // will be redirected back to the same origin, which in turn
       // allow us to get the verification token
       let verificationToken = params.get('verification_token');
-      //eugen console.log("Successfully established connection");
+      //eugen cons.lg("Successfully established connection");
       authWindow.close();
     } catch(err) {
-      //eugen console.log("DOM error is expected during cross domain authorization: " + err);
-      //eugen setTimeout(watchToken, 500)
+      //eugen cons.lg("DOM error is expected during cross domain authorization: " + err);
+      //eugen setT(watchToken, 500)
     }
   }
 };
@@ -73,11 +73,11 @@ function startSlackOAuth(integrationKey, subdomain) {
 
   client.request(request).then(
     function(response) {
-      //eugen console.log("OAuth started successfully");
+      //eugen cons.lg("OAuth started successfully");
       authorize(response.redirect_url)
     },
     function(response) {
-      //eugen console.log("Failed to start OAuth: ", response);
+      //eugen cons.lg("Failed to start OAuth: ", response);
     }
   );
 };

@@ -14,7 +14,7 @@ $(function() {
     // Derive subdomain & integration key
     subdomain = context['account']['subdomain']
     integrationKey = subdomain + "_zis_tutorial"
-    //eugen console.log("Integration key: " + integrationKey);
+    //eugen cons.lg("Integration key: " + integrationKey);
   }).then(function() {
     // Bind button to start OAuth flow
     $("#btnConnect").click(function() { startOAuth(integrationKey, subdomain) });
