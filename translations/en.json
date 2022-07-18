@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Tagado",
+    "short_description": "App to find trends in your Zendesk",
+    "long_description": "App to find trends in your Zendesk customer messages \n as an event that shows up in the \n customer context interaction history.",
+    "installation_instructions": "Simply click install."
+  }
+}
