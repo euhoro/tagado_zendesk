@@ -1,13 +1,14 @@
 {
-  "name": "Tagado - Notifier",
+  "name": "Tagado",
   "author": {
-    "name": "Tagado Integrations",
-    "email": "eugen@tagado.com",
+    "name": "Tagado",
+    "email": "support@tagado.com",
     "url": "https://www.tagado.com"
   },
   "version": "1.0",
   "frameworkVersion": "2.0",
   "defaultLocale": "en",
+  "marketingOnly": true,
   "private": false,
   "location": {
     "support": {
